@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+li {
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #444;
+}
+
+body {
+    overflow-x: hidden;
+    background: rgb(222, 220, 218);
+}
+
+
+.main-body {
+    max-width: 1300px;
+    margin: auto;
+}
+
+.about {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+
+
+.about .image img {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+}
+
+
+.about .texts {
+    margin-left: 50px;
+}
+
+.about .texts .name {
+    font-size: 3.5rem;
+    text-transform: capitalize;
+}
+
+.about .texts .name span {
+    color: rgb(255, 153, 0);
+}
+
+.about .texts .post {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.section-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    height: fit-content
+}
+
+.section.title {
+    text-transform: uppercase;
+    color: rgb(255, 153, 0);
+    margin-bottom: 20px;
+    font-size: 2rem
+}
+
+
+.education-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.education .education-container p span {
+    font-weight: bolder;
+
+}
+
+.exp-cert>section {
+    width: 50%;
+}
+
+section {
+    margin-top: 50px;
+}
+
+.experience .exp.f {
+    margin-right: 70px;
+}
+
+
+.experience h3 {
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+}
+
+.experience .date {
+    margin-bottom: 10px;
+    font-weight: bolder;
+    color: #444;
+
+}
+
+.experience .description {
+    text-align: justify;
+}
+
+.certification .cert {
+    margin-top: 20px;
+}
+
+.certification .cert .name {
+    font-weight: 600;
+    margin-top: 5px;
+    color: #444;
+}
+
+footer {
+    width: 100vw;
+    padding: 20px;
+    background: #222;
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+}
+
+footer h4 {
+    text-decoration: underline;
+}

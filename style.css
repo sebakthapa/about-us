@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #eeeeee;
+}
+
+.main-title {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 3rem;
+}
+
+.member-container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.member-container .person {
+    margin: 50px;
+
+}
+
+.member-container .person .top {
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.member-container .person .top:hover::before {
+    opacity: 1;
+
+}
+
+.member-container .person .top:hover img {
+    transform: scale(1.2) rotateZ(-10deg);
+}
+
+
+
+
+.member-container .person .top::before {
+    content: "Saugat Tiwari";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    background: rgba(1, 1, 1, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    font-weight: 700;
+    font-size: 2rem;
+    transition: .7s;
+    transition-delay: .2s;
+    opacity: 0;
+    z-index: 11111;
+    pointer-events: none;
+}
+
+.member-container .person:nth-child(2) .top::before {
+    content: "Avinav Baral";
+
+}
+
+.member-container .person:nth-child(3) .top::before {
+    content: "Akriti Wagle";
+
+}
+
+
+
+.member-container .person img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 3px;
+    transition: .5s ease-in-out;
+
+}
+
+.member-container .person .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+
+
+.member-container .person .bottom a {
+    color: #444;
+    font-size: 2rem;
+    margin: 10px;
+    transition: .2s ease-in-out;
+
+}
+
+.member-container .person .bottom a:hover {
+    color: #222;
+    transform: translateY(-3px);
+
+}
